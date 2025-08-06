@@ -110,10 +110,3 @@ Credit_Risk_Prediction/
 ```
 
 ---
-
-## 🙌 Acknowledgements
-
-- Tailwind CSS for the sleek UI
-- XGBoost and Scikit-learn for powerful ML capabilities
-- Render for seamless deployment
-
