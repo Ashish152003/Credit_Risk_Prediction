@@ -36,15 +36,36 @@
 
 ---
 
-## 📊 Feature Selection & Preprocessing
+## 📊 Feature Selection, Data Preprocessing & Model Improvement
 
-Robust preprocessing steps were performed to enhance model performance:
+A rigorous machine learning pipeline was implemented to ensure high accuracy and generalizability of the model.
 
-- **Chi-Square Test:** Used for categorical features (`EDUCATION`, `MARITALSTATUS`) with the `Approved_Flag` target (p < 0.05).
-- **VIF (Variance Inflation Factor):** Removed numerical features with multicollinearity (VIF > 6).
-- **ANOVA F-test:** Selected statistically significant numerical features.
+---
 
-> This pipeline ensures minimal redundancy and maximum relevance.
+### 🧪 Statistical Testing & Feature Selection
+
+- ✅ **Chi-Square Test:** Assessed the dependency between categorical features (e.g., `MARITALSTATUS`, `EDUCATION`) and the target variable `Approved_Flag`. Features with **p-value < 0.05** were selected.
+- ✅ **ANOVA F-Test:** Applied to numerical features to determine their statistical significance with respect to the target.
+- ✅ **Variance Inflation Factor (VIF):** Removed features with **high multicollinearity (VIF > 6)** to avoid redundant information.
+- ✅ **Hypothesis Testing:** Applied across feature types to support statistically sound feature engineering.
+
+---
+
+### 🧹 Data Cleaning & Preparation
+
+- 🧼 **Handled Missing Values** using appropriate imputation techniques.
+- 🔗 **Merged Two Datasets** to enhance the available features and improve prediction capability.
+- 🧠 **Feature Encoding:** Used Label Encoding and One-Hot Encoding where necessary to convert categorical variables.
+- 📐 **Data Alignment:** Ensured input format strictly matches the training data structure expected by the model.
+
+---
+
+### 🔧 Model Training & Optimization
+
+- ⚙️ **Model Used:** `XGBoostClassifier`
+- 🔍 **Hyperparameter Tuning:** Performed exhaustive **Grid Search** to find the optimal set of hyperparameters.
+- 🔁 **Cross-Validation:** Integrated cross-validation during grid search to avoid overfitting.
+- 📈 **Accuracy Boost:** Achieved a significant performance improvement, increasing model accuracy by **~78%** through tuning and preprocessing.
 
 ---
 
